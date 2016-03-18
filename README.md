@@ -9,10 +9,14 @@ For SMS functionality it uses [smstools3](http://smstools3.kekekasvi.com/) which
 The initscript `smsd.init` is OpenWRT inspired and CrisOS focused, hence leverages a few standardised settings that are only useful to that paticular distro.
 
 To use the initscript it should be installed in `/etc/init.d`.
-```root@host:~# cp smsd.init /etc/init.d/smsd```
+```
+root@host:~# cp smsd.init /etc/init.d/smsd
+```
     
 To enable SMSD to start at boot, enable it
-```root@host:~# /etc/init.d/smsd enable```
+```
+root@host:~# /etc/init.d/smsd enable
+```
 
 To start/stop/restart SMSD 
 ````
@@ -23,5 +27,6 @@ root@host:~# /etc/init.d/smsd restart
 
 ## Configuration
 Configuration is held within `smsd.conf` which should be installed inside `/etc`.
-    root@host:~# cp smsd.conf /etc/smsd.conf
-
+```
+root@host:~# cp smsd.conf /etc/smsd.conf
+```
